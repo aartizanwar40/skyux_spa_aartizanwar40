@@ -1,0 +1,139 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fname": "Aarti",
+      "lname": "Zanwar",
+      "phoneControl": 8856863784,
+      "email": "aartizanwar@gmail.com",
+      "myDate": "30/06/1999",
+      "address": "Shrinivas Nagar , Main Road , Parbhani"
+    },
+    {
+      "id": 2,
+      "fname": "Swati",
+      "lname": "Sharma",
+      "phoneControl": 8856863784,
+      "email": "swati@gmail.com",
+      "myDate": "30/02/1999",
+      "address": "Tilak Nagar , Main Road , Parbhani"
+    },
+    {
+      "fname": "sanket",
+      "lname": "zanwr",
+      "phoneControl": 1234567899,
+      "email": "san@gmail.com",
+      "myDate": "1999-11-04",
+      "address": "was",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "fname": "Shreya",
+      "lname": "kotalwaar",
+      "phoneControl": 1234567899,
+      "email": "Shreya@gmail.com",
+      "myDate": "1999-11-04",
+      "address": "tilka nagar"
+    },
+    {
+      "id": 5,
+      "fname": "Purva",
+      "lname": "Murkya",
+      "phoneControl": 8867543432,
+      "email": "purva@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Nanded Main Road"
+    },
+    {
+      "id": 6,
+      "fname": "Nidhish",
+      "lname": "Zanwar",
+      "phoneControl": 2342344787,
+      "email": "nidhish@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Jalna Opp to DMART"
+    },
+    {
+      "id": 7,
+      "fname": "Arnav",
+      "lname": "Murkya",
+      "phoneControl": 765432189,
+      "email": "purva@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Swastik Nagar"
+    },
+    {
+      "fname": "sqqaa",
+      "lname": "qqqq",
+      "phoneControl": "01234 567 899",
+      "email": "qq@gmail.com",
+      "myDate": "1999-11-24T18:30:00.000Z",
+      "address": "qwaa",
+      "id": 8
+    },
+    {
+      "fname": "eq",
+      "lname": "ew",
+      "phoneControl": "01234 567 899",
+      "email": "qq@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "ewsz",
+      "id": 9
+    },
+    {
+      "fname": "Shubham",
+      "lname": "Karwa",
+      "phoneControl": "088564 73523",
+      "email": "adhira@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Shivaji Nagar",
+      "id": 10
+    },
+    {
+      "fname": "Adhira",
+      "lname": "Karwa",
+      "phoneControl": "0124 356 7899",
+      "email": "adhira@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Ambajogai",
+      "id": 11
+    },
+    {
+      "fname": "Sarvesh",
+      "lname": "Rathi",
+      "phoneControl": "097654 32243",
+      "email": "sarvesh@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Secudrabad",
+      "id": 12
+    },
+    {
+      "fname": "Nihira",
+      "lname": "Mishra",
+      "phoneControl": "098766 54432",
+      "email": "nihi@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Nanitaal",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "fname": "Ritu",
+      "lname": "Gour",
+      "phoneControl": "076543 21876",
+      "email": "ritu@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Badi Sadak , Jalna"
+    },
+    {
+      "id": 15,
+      "fname": "Swapnil",
+      "lname": "Mandhane",
+      "phoneControl": "087654 32134",
+      "email": "swapnil@gmail.com",
+      "myDate": "1999-11-01T18:30:00.000Z",
+      "address": "Ganpati Chowk Parbhani"
+    }
+  ]
+}
