@@ -18,9 +18,9 @@ yarn.lock
 .node_repl_history
 
 # SKY UX temp directory
-.skyuxtmp
+
 .skypageslocales
-.skypagestmp
+
 
 # SKY UX build directory
 dist

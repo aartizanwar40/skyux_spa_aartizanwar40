@@ -134,6 +134,15 @@
       "email": "swapnil@gmail.com",
       "myDate": "1999-11-01T18:30:00.000Z",
       "address": "Ganpati Chowk Parbhani"
+    },
+    {
+      "id": 16,
+      "fname": "Chhaya",
+      "lname": "Zanwar",
+      "phoneControl": "098876 55432",
+      "email": "chhaya@gmail.com",
+      "myDate": "1999-08-10T18:30:00.000Z",
+      "address": "Shrinivas Nagar Main Road Bori"
     }
   ]
 }
