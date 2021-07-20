@@ -2,7 +2,7 @@
   <sky-navbar-item *ngFor="let n of nav">
     <a
       [routerLink]="n.path"
-      [routerLinkActiveOptions]="{exact: true}"
+      [routerLinkActiveOptions]="{ exact: true }"
       routerLinkActive="sky-navbar-item-active"
     >
       {{ n.titleKey | skyAppResources }}

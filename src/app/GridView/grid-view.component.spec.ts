@@ -1,21 +1,9 @@
-import {
-  TestBed
-} from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
+import { SkyAppTestModule } from "@skyux-sdk/builder/runtime/testing/browser";
+import { expect } from "@skyux-sdk/testing";
+import { GridViewComponent } from "./grid-view.component";
 
-import {
-  SkyAppTestModule
-} from '@skyux-sdk/builder/runtime/testing/browser';
-
-import {
-  expect
-} from '@skyux-sdk/testing';
-
-import {
-  GridViewComponent
-} from './grid-view.component';
-
-describe('Grid view component', () => {
-
+describe("Grid view component", () => {
   /**
    * This configureTestingModule function imports SkyAppTestModule, which brings in all of
    * the SKY UX modules and components in your application for testing convenience. If this has
@@ -24,16 +12,15 @@ describe('Grid view component', () => {
    */
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [SkyAppTestModule]
+      imports: [SkyAppTestModule],
     });
   });
 
-  it('should do something', () => {
+  it("should do something", () => {
     const fixture = TestBed.createComponent(GridViewComponent);
 
     fixture.detectChanges();
 
     expect(true).toBe(false);
   });
-
 });

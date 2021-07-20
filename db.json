@@ -66,7 +66,7 @@
     {
       "fname": "sqqaa",
       "lname": "qqqq",
-      "phoneControl": "01234 567 899",
+      "phoneControl": 1234567899,
       "email": "qq@gmail.com",
       "myDate": "1999-11-24T18:30:00.000Z",
       "address": "qwaa",
@@ -75,7 +75,7 @@
     {
       "fname": "eq",
       "lname": "ew",
-      "phoneControl": "01234 567 899",
+      "phoneControl": 1234567899,
       "email": "qq@gmail.com",
       "myDate": "1999-11-04T18:30:00.000Z",
       "address": "ewsz",
@@ -84,7 +84,7 @@
     {
       "fname": "Shubham",
       "lname": "Karwa",
-      "phoneControl": "088564 73523",
+      "phoneControl": 1234567899,
       "email": "adhira@gmail.com",
       "myDate": "1999-11-04T18:30:00.000Z",
       "address": "Shivaji Nagar",
@@ -93,7 +93,7 @@
     {
       "fname": "Adhira",
       "lname": "Karwa",
-      "phoneControl": "0124 356 7899",
+      "phoneControl": 1234567899,
       "email": "adhira@gmail.com",
       "myDate": "1999-11-04T18:30:00.000Z",
       "address": "Ambajogai",
@@ -102,7 +102,7 @@
     {
       "fname": "Sarvesh",
       "lname": "Rathi",
-      "phoneControl": "097654 32243",
+      "phoneControl": 1234567899,
       "email": "sarvesh@gmail.com",
       "myDate": "1999-11-04T18:30:00.000Z",
       "address": "Secudrabad",
@@ -111,7 +111,7 @@
     {
       "fname": "Nihira",
       "lname": "Mishra",
-      "phoneControl": "098766 54432",
+      "phoneControl": 1234567899,
       "email": "nihi@gmail.com",
       "myDate": "1999-11-04T18:30:00.000Z",
       "address": "Nanitaal",
@@ -121,7 +121,7 @@
       "id": 14,
       "fname": "Ritu",
       "lname": "Gour",
-      "phoneControl": "076543 21876",
+      "phoneControl": 1234567899,
       "email": "ritu@gmail.com",
       "myDate": "1999-11-04T18:30:00.000Z",
       "address": "Badi Sadak , Jalna"
@@ -130,7 +130,7 @@
       "id": 15,
       "fname": "Swapnil",
       "lname": "Mandhane",
-      "phoneControl": "087654 32134",
+      "phoneControl": 8765432134,
       "email": "swapnil@gmail.com",
       "myDate": "1999-11-01T18:30:00.000Z",
       "address": "Ganpati Chowk Parbhani"
@@ -139,7 +139,7 @@
       "id": 16,
       "fname": "Chhaya",
       "lname": "Zanwar",
-      "phoneControl": "098876 55432",
+      "phoneControl": 9887655432,
       "email": "chhaya@gmail.com",
       "myDate": "1999-08-10T18:30:00.000Z",
       "address": "Shrinivas Nagar Main Road Bori"

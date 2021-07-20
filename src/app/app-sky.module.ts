@@ -1,103 +1,45 @@
-import {
-  NgModule
-} from '@angular/core';
-
-import {
-  SkyAvatarModule
-} from '@skyux/avatar';
-
+import { HttpClientModule } from "@angular/common/http";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { SkyAgGridModule } from "@skyux/ag-grid";
+import { SkyAvatarModule } from "@skyux/avatar";
+import { SkyIdModule } from "@skyux/core";
+import { SkyDatepickerModule } from "@skyux/datetime";
+import { SkyInputBoxModule } from "@skyux/forms";
 import {
   SkyAlertModule,
-  SkyKeyInfoModule
-} from '@skyux/indicators';
-
+  SkyKeyInfoModule,
+  SkyLabelModule,
+  SkyStatusIndicatorModule,
+} from "@skyux/indicators";
 import {
-  SkyFluidGridModule, SkyPageModule
-} from '@skyux/layout';
-
-import {
-  SkyNavbarModule
-} from '@skyux/navbar';
-
-import {
-  SkyLabelModule
-} from '@skyux/indicators';
-
-import {
-  SkyDatepickerModule
-} from '@skyux/datetime';
-
-import {
-  SkyInputBoxModule
-} from '@skyux/forms';
-
-import {
-  SkyIdModule
-} from '@skyux/core';
-
-import {
-  SkyEmailValidationModule
-} from '@skyux/validation';
-
-import {
-  SkyStatusIndicatorModule
-} from '@skyux/indicators';
-
-import {
-  SkyPhoneFieldModule
-} from '@skyux/phone-field';
-
-import {
-  SkyToolbarModule
-} from '@skyux/layout';
-
-import {
-  SkyRepeaterModule
-} from '@skyux/lists';
-
-import {
-  SkySearchModule
-} from '@skyux/lookup';
-
-import {
-  SkyDropdownModule
-} from '@skyux/popovers';
-
-import {
-  SkyModalModule
-
-} from '@skyux/modals';
-import {
-  SkyAgGridModule
- } from '@skyux/ag-grid';
-
- import {
-  SkyListModule,
-  SkyListToolbarModule
-} from '@skyux/list-builder';
-
-import {
-  SkyListViewGridModule
-} from '@skyux/list-builder-view-grids';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-
-import { AgGridModule } from 'ag-grid-angular';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-import { DataEntryGridComponent } from './DataEntryGrid/data-entry-grid.component';
-import { SkyDataEntryGridEditModalComponent } from './DataEntryGrid/data-entry-grid-edit-modal.component';
-import { SkyDataEntryGridContextMenuComponent } from './DataEntryGrid/data-entry-grid-context-menu.component';
+  SkyFluidGridModule,
+  SkyPageModule,
+  SkyToolbarModule,
+} from "@skyux/layout";
+import { SkyListModule, SkyListToolbarModule } from "@skyux/list-builder";
+import { SkyListViewGridModule } from "@skyux/list-builder-view-grids";
+import { SkyRepeaterModule } from "@skyux/lists";
+import { SkySearchModule } from "@skyux/lookup";
+import { SkyModalModule } from "@skyux/modals";
+import { SkyNavbarModule } from "@skyux/navbar";
+import { SkyPhoneFieldModule } from "@skyux/phone-field";
+import { SkyDropdownModule } from "@skyux/popovers";
+import { SkyEmailValidationModule } from "@skyux/validation";
+import { AgGridModule } from "ag-grid-angular";
+import { SkyDataEntryGridContextMenuComponent } from "./DataEntryGrid/data-entry-grid-context-menu.component";
+import { SkyDataEntryGridEditModalComponent } from "./DataEntryGrid/data-entry-grid-edit-modal.component";
+import { DataEntryGridComponent } from "./DataEntryGrid/data-entry-grid.component";
 
 @NgModule({
-
   imports: [
     BrowserModule,
     AgGridModule.withComponents([]),
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
   ],
   exports: [
     SkyAvatarModule,
@@ -122,8 +64,12 @@ import { SkyDataEntryGridContextMenuComponent } from './DataEntryGrid/data-entry
     SkyListViewGridModule,
     SkyListModule,
     SkyListToolbarModule,
-    SkyPageModule
+    SkyPageModule,
   ],
-  bootstrap: [DataEntryGridComponent , SkyDataEntryGridEditModalComponent , SkyDataEntryGridContextMenuComponent]
+  bootstrap: [
+    DataEntryGridComponent,
+    SkyDataEntryGridEditModalComponent,
+    SkyDataEntryGridContextMenuComponent,
+  ],
 })
-export class AppSkyModule { }
+export class AppSkyModule {}

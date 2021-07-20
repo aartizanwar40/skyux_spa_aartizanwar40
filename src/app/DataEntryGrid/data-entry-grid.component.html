@@ -2,12 +2,22 @@
 <div style="width: 100%">
   <sky-toolbar>
     <sky-toolbar-item>
-      <button class="sky-btn sky-btn-primary" id="edit-btn" (click)="openModal()">
+      <button
+        class="sky-btn sky-btn-primary"
+        id="edit-btn"
+        (click)="openModal()"
+      >
         Edit
       </button>
     </sky-toolbar-item>
     <sky-toolbar-item>
-      <sky-search [searchText]="searchText" [debounceTime]="250" (searchApply)="searchApplied($event)" (searchChange)="searchApplied($event)" (searchClear)="searchApplied($event)">
+      <sky-search
+        [searchText]="searchText"
+        [debounceTime]="250"
+        (searchApply)="searchApplied($event)"
+        (searchChange)="searchApplied($event)"
+        (searchClear)="searchApplied($event)"
+      >
       </sky-search>
     </sky-toolbar-item>
   </sky-toolbar>
@@ -15,8 +25,4 @@
     <ag-grid-angular [gridOptions]="gridOptions" [rowData]="gridData | async">
     </ag-grid-angular>
   </sky-ag-grid-wrapper>
-
-
 </div>
-
-

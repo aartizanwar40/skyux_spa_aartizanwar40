@@ -1,72 +1,120 @@
 <!--Login Page-->
-<br/>
-<br/>
-<form novalidate [formGroup]="myForm" class='phone-field-demo'>
-<label for="required-input-with-label-example" class="sky-control-label sky-control-label-required">
-  First Name
-</label>
-<input formControlName="fname" class="sky-form-control" id="required-input-with-label-example" type="text" aria-required="true" required>
-<br/>
-<br/>
+<br />
+<br />
+<form novalidate [formGroup]="myForm" class="phone-field-demo">
+  <label
+    for="required-input-with-label-example"
+    class="sky-control-label sky-control-label-required"
+  >
+    First Name
+  </label>
+  <input
+    formControlName="fname"
+    class="sky-form-control"
+    id="required-input-with-label-example"
+    type="text"
+    aria-required="true"
+    required
+  />
+  <br />
+  <br />
 
-<label for="required-input-with-label-example" class="sky-control-label sky-control-label-required">
-  Last Name
-</label>
-<input formControlName="lname" class="sky-form-control" id="required-input-with-label-example" type="text" aria-required="true" required>
-<br/>
-<br/>
+  <label
+    for="required-input-with-label-example"
+    class="sky-control-label sky-control-label-required"
+  >
+    Last Name
+  </label>
+  <input
+    formControlName="lname"
+    class="sky-form-control"
+    id="required-input-with-label-example"
+    type="text"
+    aria-required="true"
+    required
+  />
+  <br />
+  <br />
 
-<label for="required-input-with-label-example" class="sky-control-label sky-control-label-required">
-  Contact Number
-</label>
+  <label
+    for="required-input-with-label-example"
+    class="sky-control-label sky-control-label-required"
+  >
+    Contact Number
+  </label>
   <sky-input-box>
     <sky-phone-field [defaultCountry]="'in'">
-      <input formControlName="phoneControl" skyPhoneFieldInput>
+      <input formControlName="phoneControl" skyPhoneFieldInput />
     </sky-phone-field>
   </sky-input-box>
 
-  <sky-status-indicator *ngIf="!phoneControl.valid" descriptionType="none" indicatorType="danger">
+  <sky-status-indicator
+    *ngIf="!phoneControl.valid"
+    descriptionType="none"
+    indicatorType="danger"
+  >
     Enter a phone number matching the format for the selected country.
   </sky-status-indicator>
 
-<br/>
+  <br />
 
-<div class="sky-form-group">
+  <div class="sky-form-group">
     <label class="sky-control-label" [for]="emailInput.id">
       Email address
     </label>
-    <input class="sky-form-control" formControlName="email" skyId #emailInput="skyId"/>
+    <input
+      class="sky-form-control"
+      formControlName="email"
+      skyId
+      #emailInput="skyId"
+    />
   </div>
   <ng-container *ngIf="emailControl.errors && emailControl.touched">
     <div *ngIf="emailControl.errors.required" class="sky-error-label">
       Email address is required.
     </div>
-    <div *ngIf="emailControl.errors.skyEmail && emailControl.dirty" class="sky-error-label">
+    <div
+      *ngIf="emailControl.errors.skyEmail && emailControl.dirty"
+      class="sky-error-label"
+    >
       Enter a valid email in the "joe@abc.com" format.
     </div>
   </ng-container>
-<br/>
-
+  <br />
 
   <sky-input-box>
-    <label class="sky-control-label" [for]="dateInput.id">
-      Date
-    </label>
+    <label class="sky-control-label" [for]="dateInput.id"> Date </label>
     <sky-datepicker>
-      <input formControlName="myDate" id="myDate" skyDatepickerInput skyId type="text" #dateInput="skyId"/>
+      <input
+        formControlName="myDate"
+        id="myDate"
+        skyDatepickerInput
+        skyId
+        type="text"
+        #dateInput="skyId"
+      />
     </sky-datepicker>
   </sky-input-box>
 
-<br/>
+  <br />
 
-<label for="required-input-with-label-example" class="sky-control-label sky-control-label-required">
-  Address
-</label>
-<input formControlName="address" class="sky-form-control" id="required-input-with-label-example" type="text" aria-required="true" required>
-<br/>
-<br/>
-<!--Submit the Form-->
-<button class="sky-btn sky-btn-primary" (click)="addItem()">Submit</button>
-<button class="sky-btn sky-btn-default" (click)="reset()">Cancel</button>
+  <label
+    for="required-input-with-label-example"
+    class="sky-control-label sky-control-label-required"
+  >
+    Address
+  </label>
+  <input
+    formControlName="address"
+    class="sky-form-control"
+    id="required-input-with-label-example"
+    type="text"
+    aria-required="true"
+    required
+  />
+  <br />
+  <br />
+  <!--Submit the Form-->
+  <button class="sky-btn sky-btn-primary" (click)="addItem()">Submit</button>
+  <button class="sky-btn sky-btn-default" (click)="reset()">Cancel</button>
 </form>
-
