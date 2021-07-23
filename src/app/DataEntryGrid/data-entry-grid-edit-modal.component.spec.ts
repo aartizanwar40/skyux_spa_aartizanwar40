@@ -1,10 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { SkyAppTestModule } from '@skyux-sdk/builder/runtime/testing/browser';
 import { expect } from '@skyux-sdk/testing';
-// Component we're going to test
-import { HomeComponent } from './home.component';
+import { SkyDataEntryGridEditModalComponent } from './data-entry-grid-edit-modal.component';
 
-describe('Home component', () => {
+describe('Data grid edit modal component', () => {
   /**
    * This configureTestingModule function imports SkyAppTestModule, which brings in all of
    * the SKY UX modules and components in your application for testing convenience. If this has
@@ -17,9 +16,12 @@ describe('Home component', () => {
     });
   });
 
-  it('should display a sky-alert', () => {
-    const fixture = TestBed.createComponent(HomeComponent);
+  // tslint:disable-next-line: no-disabled-tests
+  xit('should do something', () => {
+    const fixture = TestBed.createComponent(SkyDataEntryGridEditModalComponent);
+
     fixture.detectChanges();
+
     expect(true).toBe(true);
   });
 });

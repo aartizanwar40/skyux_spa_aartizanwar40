@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "fname": "Aarti",
+      "lname": "Zanwar",
+      "phoneControl": "098765 43212",
+      "email": "aarti@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Shrinivas Nagar, Main Road Bori, Dist-Parbhani",
+      "id": 2
+    },
+    {
+      "fname": "Swati",
+      "lname": "Sharma",
+      "phoneControl": "079722 72694",
+      "email": "swatisharma0212s@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "MIT Girls Hostel Gate No -2 Beed Bypass Road Aurangabad",
+      "id": 3
+    },
+    {
+      "fname": "abhi",
+      "lname": "abhi",
+      "phoneControl": "098765 43421",
+      "email": "abhi@gmail.com",
+      "myDate": "1999-11-04T18:30:00.000Z",
+      "address": "Abhi Nivaas",
+      "id": 1
+    }
+  ]
+}

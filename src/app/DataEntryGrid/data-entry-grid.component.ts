@@ -1,25 +1,25 @@
-import { HttpClient } from "@angular/common/http";
-import { Component } from "@angular/core";
-import { SkyAgGridService } from "@skyux/ag-grid";
-import { SkyModalCloseArgs, SkyModalService } from "@skyux/modals";
-import { GridApi, GridOptions, GridReadyEvent } from "ag-grid-community";
-import { SkyDataEntryGridEditModalContext } from "./data-entry-grid-edit-modal-context";
-import { SkyDataEntryGridEditModalComponent } from "./data-entry-grid-edit-modal.component";
+import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
+import { SkyAgGridService } from '@skyux/ag-grid';
+import { SkyModalCloseArgs, SkyModalService } from '@skyux/modals';
+import { GridApi, GridOptions, GridReadyEvent } from 'ag-grid-community';
+import { SkyDataEntryGridEditModalContext } from './data-entry-grid-edit-modal-context';
+import { SkyDataEntryGridEditModalComponent } from './data-entry-grid-edit-modal.component';
 
 @Component({
-  selector: "app-data-entry-grid",
-  templateUrl: "./data-entry-grid.component.html",
-  styleUrls: ["./data-entry-grid.component.scss"],
+  selector: 'app-data-entry-grid',
+  templateUrl: './data-entry-grid.component.html',
+  styleUrls: ['./data-entry-grid.component.scss']
 })
 export class DataEntryGridComponent {
   public gridData: any;
   public columnDefs = [
-    { headerName: "First Name", field: "fname" },
-    { headerName: "Last Name", field: "lname" },
-    { headerName: "Contact Number", field: "phoneControl" },
-    { headerName: "Email", field: "email" },
-    { headerName: "Date of Birth", field: "myDate" },
-    { headerName: "Address", field: "address" },
+    { headerName: 'First Name', field: 'fname' },
+    { headerName: 'Last Name', field: 'lname' },
+    { headerName: 'Contact Number', field: 'phoneControl' },
+    { headerName: 'Email', field: 'email' },
+    { headerName: 'Date of Birth', field: 'myDate' },
+    { headerName: 'Address', field: 'address' }
   ];
   public gridApi: GridApi;
   public gridOptions: GridOptions;
@@ -33,13 +33,13 @@ export class DataEntryGridComponent {
 
   // tslint:disable-next-line: use-lifecycle-interface
   public ngOnInit(): void {
-    this.gridData = this.http.get("http://localhost:3000/posts");
+    this.gridData = this.http.get('http://localhost:3000/users');
     this.gridOptions = {
       columnDefs: this.columnDefs,
-      onGridReady: (gridReadyEvent) => this.onGridReady(gridReadyEvent),
+      onGridReady: (gridReadyEvent) => this.onGridReady(gridReadyEvent)
     };
     this.gridOptions = this.agGridService.getGridOptions({
-      gridOptions: this.gridOptions,
+      gridOptions: this.gridOptions
     });
   }
   public onGridReady(gridReadyEvent: GridReadyEvent): void {
@@ -52,10 +52,10 @@ export class DataEntryGridComponent {
     context.gridData = this.gridData;
     const options = {
       providers: [
-        { provide: SkyDataEntryGridEditModalContext, useValue: context },
+        { provide: SkyDataEntryGridEditModalContext, useValue: context }
       ],
-      ariaDescribedBy: "docs-edit-grid-modal-content",
-      size: "large",
+      ariaDescribedBy: 'docs-edit-grid-modal-content',
+      size: 'large'
     };
 
     const modalInstance = this.modalService.open(
@@ -63,12 +63,12 @@ export class DataEntryGridComponent {
       options
     );
     modalInstance.closed.subscribe((result: SkyModalCloseArgs) => {
-      if (result.reason === "cancel" || result.reason === "close") {
-        alert("Edits canceled!");
+      if (result.reason === 'cancel' || result.reason === 'close') {
+        alert('Edits canceled!');
       } else {
         this.gridData = result.data;
         this.gridApi.refreshCells();
-        alert("Saving data!");
+        alert('Saving data!');
       }
     });
   }

@@ -1,19 +1,19 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 import {
   AbstractControl,
   FormBuilder,
   FormControl,
   FormGroup,
-  Validators,
-} from "@angular/forms";
-import { SkyValidators } from "@skyux/validation";
-import { ApiService } from "../shared/api.service";
-import { UserModel } from "./login.model";
+  Validators
+} from '@angular/forms';
+import { SkyValidators } from '@skyux/validation';
+import { ApiService } from '../shared/api.service';
+import { UserModel } from './login.model';
 
 @Component({
-  selector: "app-login",
-  templateUrl: "./login.component.html",
-  styleUrls: ["./login.component.scss"],
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
   public myForm!: FormGroup;
@@ -27,20 +27,20 @@ export class LoginComponent implements OnInit {
   public ngOnInit(): void {
     this.phoneControl = new FormControl();
     this.myForm = new FormGroup({
-      phoneControl: this.phoneControl,
+      phoneControl: this.phoneControl
     });
     this.myForm = this.formBuilder.group({
-      fname: ["", Validators.required],
-      lname: ["", Validators.required],
-      phoneControl: ["", Validators.required],
-      email: new FormControl("", [Validators.required, SkyValidators.email]),
+      fname: ['', Validators.required],
+      lname: ['', Validators.required],
+      phoneControl: ['', Validators.required],
+      email: new FormControl('', [Validators.required, SkyValidators.email]),
       myDate: new FormControl(new Date(1999, 10, 5)),
-      address: ["", Validators.required],
+      address: ['', Validators.required]
     });
     this.getallUser();
   }
   public get emailControl(): AbstractControl {
-    return this.myForm.get("email");
+    return this.myForm.get('email');
   }
 
   public addItem() {
@@ -54,16 +54,18 @@ export class LoginComponent implements OnInit {
     this.api.postUser(this.userModelObj).subscribe(
       (res) => {
         console.log(res);
-        alert("User added successfully");
+        alert('User added successfully');
         this.myForm.reset();
       },
       (err) => {
         console.log(err);
-        alert("Something went wrong");
+        alert('Something went wrong');
       }
     );
   }
-
+  public onSubmit(): void {
+    this.addItem();
+  }
   public reset() {
     this.myForm.reset();
   }

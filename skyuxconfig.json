@@ -3,8 +3,6 @@
   "mode": "easy",
   "compileMode": "aot",
   "app": {
-
-    "styles":["src/app/styles.scss",
-      "@skyux/ag-grid/css/sky-ag-grid.css"]
+    "styles": ["src/app/styles.scss", "@skyux/ag-grid/css/sky-ag-grid.css"]
   }
 }
